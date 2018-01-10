@@ -28,10 +28,10 @@ body ul,
   -ms-transform: rotateX(10deg);
   -webkit-transform: rotateX(10deg);
   transform: rotateX(10deg);
-  -moz-transition: left 1s;
-  -o-transition: left 1s;
-  -webkit-transition: left 1s;
-  transition: left 1s;
+  -moz-transition: left 1s 0;
+  -o-transition: left 1s 0;
+  -webkit-transition: left 1s 0;
+  transition: left 1s 0;
 }
 /* line 26, ../sass/h5.scss */
 html ul li,
@@ -98,7 +98,7 @@ body ul li.page3,
 html ul.hover,
 body ul.hover,
 .container ul.hover {
-  transform: translateX(3.2rem) rotateX(10deg);
+  left: 1.49333rem;
 }
 /* line 65, ../sass/h5.scss */
 html ul.hover .page1,
