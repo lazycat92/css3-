@@ -57,7 +57,7 @@
     <section class="container">
         <ul class="goldenState">
             <li class="page1">
-                打开看看有惊喜！！！！
+                打开看看有惊喜！！!
             </li>
             <li class="page2">
                 <p>天真！</p>
@@ -73,7 +73,6 @@
             var a = document.querySelector(".goldenState");
             a.addEventListener("click", function(e) {
                 e.stopPropagation();
-                console.log("0", e.currentTarget.className);
                 if (e.currentTarget.className.indexOf("hover") > -1) {
                     return;
                 }

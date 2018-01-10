@@ -42,6 +42,7 @@ body,
                 @include transform-origin(left,
                 center);
                 z-index: 0;
+                font-weight: bold;
             }
             &.page2 {
                 left: -100%;

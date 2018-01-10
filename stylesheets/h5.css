@@ -66,8 +66,9 @@ body ul li.page1,
   -webkit-transform-origin: left center;
   transform-origin: left center;
   z-index: 0;
+  font-weight: bold;
 }
-/* line 46, ../sass/h5.scss */
+/* line 47, ../sass/h5.scss */
 html ul li.page2,
 body ul li.page2,
 .container ul li.page2 {
@@ -85,7 +86,7 @@ body ul li.page2,
   font-size: 0.85333rem;
   font-weight: bold;
 }
-/* line 56, ../sass/h5.scss */
+/* line 57, ../sass/h5.scss */
 html ul li.page3,
 body ul li.page3,
 .container ul li.page3 {
@@ -93,13 +94,13 @@ body ul li.page3,
   background-size: 100% 100%;
   z-index: -2;
 }
-/* line 62, ../sass/h5.scss */
+/* line 63, ../sass/h5.scss */
 html ul.hover,
 body ul.hover,
 .container ul.hover {
   transform: translateX(3.2rem) rotateX(10deg);
 }
-/* line 64, ../sass/h5.scss */
+/* line 65, ../sass/h5.scss */
 html ul.hover .page1,
 body ul.hover .page1,
 .container ul.hover .page1 {
@@ -108,7 +109,7 @@ body ul.hover .page1,
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
-/* line 67, ../sass/h5.scss */
+/* line 68, ../sass/h5.scss */
 html ul.hover .page2,
 body ul.hover .page2,
 .container ul.hover .page2 {
