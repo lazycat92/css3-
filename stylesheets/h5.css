@@ -46,6 +46,8 @@ body ul li,
   list-style: none;
   border: 1px solid #000;
   border-collapse: collapse;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-transition: -moz-transform 1s;
   -o-transition: -o-transform 1s;
