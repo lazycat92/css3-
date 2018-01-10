@@ -33,7 +33,7 @@ body,
             list-style: none;
             border: 1px solid #000;
             border-collapse: collapse;
-            backface-visibility: hidden;
+            @include backface-visibility(hidden);
             @include transition(transform 1s);
             box-sizing: border-box;
             &.page1 {
