@@ -1,20 +1,25 @@
 /* line 7, ../sass/h5.scss */
 html,
-body,
-.container {
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
-/* line 14, ../sass/h5.scss */
-html ul,
-body ul,
+
+/* line 15, ../sass/h5.scss */
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: 6.4rem;
+  box-sizing: border-box;
+}
+/* line 20, ../sass/h5.scss */
 .container ul {
   width: 6.4rem;
   height: 10.66667rem;
   background: #eee;
-  margin: 6.4rem auto 0;
+  margin: 0 auto 0;
   padding: 0;
   position: relative;
   left: 0;
@@ -33,9 +38,7 @@ body ul,
   -webkit-transition: left 1s 0;
   transition: left 1s 0;
 }
-/* line 26, ../sass/h5.scss */
-html ul li,
-body ul li,
+/* line 32, ../sass/h5.scss */
 .container ul li {
   text-align: center;
   position: absolute;
@@ -55,9 +58,7 @@ body ul li,
   transition: transform 1s;
   box-sizing: border-box;
 }
-/* line 39, ../sass/h5.scss */
-html ul li.page1,
-body ul li.page1,
+/* line 45, ../sass/h5.scss */
 .container ul li.page1 {
   background: url("../imgs/IMG_3499.jpg") no-repeat;
   background-size: 100% 100%;
@@ -68,9 +69,7 @@ body ul li.page1,
   z-index: 0;
   font-weight: bold;
 }
-/* line 47, ../sass/h5.scss */
-html ul li.page2,
-body ul li.page2,
+/* line 53, ../sass/h5.scss */
 .container ul li.page2 {
   left: -100%;
   z-index: -1;
@@ -86,32 +85,24 @@ body ul li.page2,
   font-size: 0.85333rem;
   font-weight: bold;
 }
-/* line 57, ../sass/h5.scss */
-html ul li.page3,
-body ul li.page3,
+/* line 63, ../sass/h5.scss */
 .container ul li.page3 {
   background: url("../imgs/u=2618316350,1090529273&fm=27&gp=0.jpg") no-repeat;
   background-size: 100% 100%;
   z-index: -2;
 }
-/* line 63, ../sass/h5.scss */
-html ul.hover,
-body ul.hover,
+/* line 69, ../sass/h5.scss */
 .container ul.hover {
   left: 3.2rem;
 }
-/* line 65, ../sass/h5.scss */
-html ul.hover .page1,
-body ul.hover .page1,
+/* line 71, ../sass/h5.scss */
 .container ul.hover .page1 {
   -moz-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
-/* line 68, ../sass/h5.scss */
-html ul.hover .page2,
-body ul.hover .page2,
+/* line 74, ../sass/h5.scss */
 .container ul.hover .page2 {
   -moz-transform: rotateY(0);
   -ms-transform: rotateY(0);

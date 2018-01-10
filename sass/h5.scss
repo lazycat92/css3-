@@ -5,17 +5,23 @@ $fontSize: 46.875;
 }
 
 html,
-body,
-.container {
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding-top: rem(300);
+    box-sizing: border-box;
     ul {
         width: rem(300);
         height: rem(500);
         background: #eee;
-        margin: rem(300) auto 0;
+        margin: 0 auto 0;
         padding: 0;
         position: relative;
         left: 0;
