@@ -61,7 +61,7 @@ body,
             }
         }
         &.hover {
-            left: rem(100);
+            left: rem(150);
             .page1 {
                 @include transform(rotateY(-180deg));
             }
