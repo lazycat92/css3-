@@ -1,0 +1,72 @@
+@import "compass/css3";
+$fontSize: 46.875;
+@function rem($n) {
+    @return ($n / $fontSize) * 1rem;
+}
+
+html,
+body,
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    ul {
+        width: rem(300);
+        height: rem(500);
+        background: #eee;
+        margin: rem(300) auto 0;
+        padding: 0;
+        position: relative;
+        left: 0;
+        @include perspective(1500px);
+        @include transform-style(preserve-3d);
+        @include transform(rotateX(10deg));
+        @include transition(left 1s);
+        li {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: rem(500);
+            list-style: none;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            backface-visibility: hidden;
+            @include transition(transform 1s);
+            box-sizing: border-box;
+            &.page1 {
+                background: url("../imgs/IMG_3499.jpg") no-repeat;
+                background-size: 100% 100%;
+                @include transform-origin(left,
+                center);
+                z-index: 0;
+            }
+            &.page2 {
+                left: -100%;
+                z-index: -1;
+                @include transform(rotateY(180deg));
+                @include transform-origin(right,
+                center);
+                color: red;
+                font-size: rem(40);
+                font-weight: bold;
+            }
+            &.page3 {
+                background: url("../imgs/u=2618316350,1090529273&fm=27&gp=0.jpg") no-repeat;
+                background-size: 100% 100%;
+                z-index: -2;
+            }
+        }
+        &.hover {
+            transform: translateX(rem(150)) rotateX(10deg);
+            .page1 {
+                @include transform(rotateY(-180deg));
+            }
+            .page2 {
+                @include transform(rotateY(0));
+            }
+        }
+    }
+}

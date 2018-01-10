@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3翻页效果</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+    <ul class="goldenState">
+        <li class="page1">
+            打开看看有惊喜！！！！
+        </li>
+        <li class="page2">
+            <p>天真！</p>
+            <p>随便说说你也信！</p>
+        </li>
+        <li class="page3"></li>
+    </ul>
+
+    <script>
+        window.onload = function() {
+            var a = document.querySelector(".goldenState");
+            a.addEventListener("mouseover", function(e) {
+                var _li = e.target.parentNode;
+                console.log(e);
+                _li.className = "hover";
+            });
+            a.addEventListener("mouseout", function(e) {
+                var _li = e.target.parentNode;
+                _li.className = "";
+            }, false);
+        }
+    </script>
+</body>
+
+</html>
